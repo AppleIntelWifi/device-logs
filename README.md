@@ -6,3 +6,10 @@ as a result, we have to rely on crowdsourcing.
 
 If you have a compatible Intel wireless card, and can provide logs,
 please create an issue with your log file (attached as an attachment), and state the card name.
+
+
+## How to get logs
+```
+log show --last boot --predicate 'process == "kernel"' | grep -i intel > ~/Desktop/log.txt
+```
+Running the above command in Terminal will create a `log.txt` file on your desktop.
